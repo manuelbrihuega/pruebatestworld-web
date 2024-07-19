@@ -1,0 +1,91 @@
+.cabecera {
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  padding-top: .5rem;
+  padding-right: 2rem;
+  padding-bottom: .5rem;
+  padding-left: 2rem;
+  background-color: transparent;
+  @include estilos-texto(1, $blanco, inherit, inherit);
+  transition: all .4s linear;
+
+  &:hover {
+    background-color: $blanco;
+    @include estilos-texto(1, $negro, inherit, inherit);
+  }
+
+  @media (max-width: $tablet-max-width) {
+    background-color: $blanco;
+    @include estilos-texto(1, $negro, inherit, inherit);
+  }
+}
+
+.cabecera__titulo {
+  @include estilos-texto(1.8, inherit, inherit, 500);
+}
+
+.menu__lista {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+  @media (max-width: $tablet-max-width) {
+    position: absolute;
+    top: 57px;
+    right: 0;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0;
+    visibility: hidden;
+    @include estilos-texto(1, $negro, inherit, inherit);
+    background-color: $blanco;
+  }
+}
+
+.cabecera__toggle {
+  display: none;
+}
+
+.cabecera__toggle:checked + .cabecera__menu > .menu__lista {
+  visibility: visible;
+}
+
+.menu__elemento {
+  margin-left: 1.5rem;
+  text-transform: uppercase;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 1rem;
+  }
+}
+
+.menu__enlace {
+  text-decoration: none;
+  @include estilos-texto(.9, inherit, inherit, inherit);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.menu__icono {
+  margin-right: .5rem;
+}
+
+.cabecera__hamburguesa {
+  display: none;
+  cursor: pointer;
+
+  @media (max-width: $tablet-max-width) {
+    position: absolute;
+    top: 1.3rem;
+    right: .5rem;
+    display: block;
+    @include estilos-texto(3, inherit, inherit, inherit);
+  }
+}

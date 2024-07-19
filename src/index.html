@@ -1,0 +1,200 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>PruebaTest World ©</title>
+  </head>
+  <body class="pagina">
+    <div class="cabecera pagina__cabecera">
+      <h1 class="cabecera__titulo">PruebaTest World ©</h1>
+      <label class="cabecera__hamburguesa" for="toggle-menu">&#9776;</label>
+      <input class="cabecera__toggle" id="toggle-menu" type="checkbox">
+      <nav class="menu cabecera__menu">
+        <ul class="menu__lista">
+          <li class="menu__elemento"><a class="menu__enlace" href="#bienvenida"><i class="menu__icono fas fa-house"></i>Bienvenida</a></li>
+          <li class="menu__elemento"><a class="menu__enlace" href="#gente"><i class="menu__icono fas fa-user-group"></i>Objetivo</a></li>
+          <li class="menu__elemento"><a class="menu__enlace" href="#interes"><i class="menu__icono fas fa-location-dot"></i>Nuestras apps</a></li>
+        </ul>
+      </nav>
+    </div>
+    <video class="pagina__video" autoplay muted loop>
+      <source src="../src/assets/videos/video.mp4" type="video/mp4">
+      <source src="../src/assets/videos/video.webm" type="video/webm">
+      <source src="../src/assets/videos/video.ogv" type="video/ogg">
+      <img src="../src/assets/videos/video.png" alt="Video poster">
+    </video>
+    <p class="eslogan pagina__eslogan">¡Un paraíso de aplicaciones a tu alcance!</p>
+    <div class="card card--fondo-claro card--introductorio pagina__card" id="bienvenida">
+      <h2 class="card__titulo"><i class="card__icono fas fa-house"></i>PruebaTest World ©</h2>
+      <p class="card__texto">Bienvenido a PruebaTest World, tu aliado en el desarrollo de aplicaciones multiplataforma dedicadas a la enseñanza y el aprendizaje. Nos especializamos en crear soluciones innovadoras que facilitan el estudio de leyes y temarios de oposiciones a través de preguntas tipo test. Nuestras aplicaciones están diseñadas para ofrecer una experiencia de aprendizaje interactiva y eficaz, adaptándose a las necesidades de cada usuario. En PruebaTest World, combinamos tecnología de punta con métodos pedagógicos probados para asegurar que nuestros clientes logren sus objetivos académicos y profesionales. Únete a nosotros y descubre cómo nuestras herramientas pueden transformar tu forma de aprender y prepararte para el éxito.</p>
+    </div>
+    <div class="card card--fondo-vegas pagina__card" id="gente">
+      <h2 class="card__titulo card__titulo--secundario card__titulo--claro"><i class="card__icono fas fa-user-group"></i>Nuestro objetivo</h2>
+      <p class="card__texto card__texto--claro">En PruebaTest World, nuestro objetivo principal es proporcionar aplicaciones multiplataforma gratuitas diseñadas para facilitar el aprendizaje de leyes y temarios de oposiciones. Nos enfocamos especialmente en la plataforma Android, ofreciendo herramientas interactivas y accesibles que transforman el estudio en una experiencia dinámica y divertida. Creemos firmemente en el poder de la educación accesible para todos, y por ello nos dedicamos a desarrollar soluciones tecnológicas innovadoras que ayuden a nuestros usuarios a alcanzar sus metas académicas y profesionales.</p>
+      <p class="card__texto card__texto--claro">Nuestras aplicaciones están diseñadas para adaptarse a las necesidades de los estudiantes, ofreciendo una amplia gama de preguntas tipo test que cubren diversos temas legales y de oposiciones. Con una interfaz amigable y funcionalidades intuitivas, nuestras herramientas permiten a los usuarios practicar y evaluar sus conocimientos de manera eficiente y entretenida. En PruebaTest World, estamos comprometidos con la calidad y la excelencia, asegurando que cada aplicación sea una valiosa ayuda en el camino hacia el éxito.</p>
+      <p class="card__texto card__texto--claro">El aprendizaje a través de juegos de preguntas tipo test no solo mejora la retención de información, sino que también hace que el proceso de estudio sea más ameno y motivador. En PruebaTest World, entendemos que cada estudiante tiene su propio ritmo y estilo de aprendizaje, por lo que nuestras aplicaciones están diseñadas para ser flexibles y adaptativas. Esto permite a los usuarios personalizar su experiencia de estudio y centrarse en las áreas que necesitan mejorar.</p>
+      <p class="card__texto card__texto--claro">En resumen, PruebaTest World se dedica a ofrecer soluciones educativas innovadoras y accesibles. Con nuestras aplicaciones multiplataforma gratuitas, especialmente para Android, facilitamos el aprendizaje de leyes y temarios de oposiciones mediante juegos de preguntas tipo test. Estamos comprometidos con la educación y el éxito de nuestros usuarios.</p>
+    </div>
+    <div class="card card--fondo-claro pagina__card" id="interes">
+      <h2 class="card__titulo card__titulo--secundario"><i class="card__icono fa-brands fa-google-play"></i>Nuestras Apps</h2>
+      <div class="card__caja">
+        <div class="card card__card">
+          <a href="https://play.google.com/store/apps/details?id=com.pruebatest.ley032018&hl=es_HN">
+            <picture>
+              <!-- Imagen para pantallas iguales o menores a 460px -->
+              <source media="(max-width: 460px)" srcset="../src/assets/images/32018-promo-s.png">
+              <!-- Imagen para pantallas iguales o menores a 700px -->
+              <source media="(max-width: 700px)" srcset="../src/assets/images/32018-promo-m.png">
+              <!-- Imagen por defecto -->
+              <img class="card__imagen-fondo" src="../src/assets/images/32018-promo.png" alt="Banner promocional de la app Test Ley Protección de Datos">
+            </picture>
+          </a>
+        </div>
+        <div class="card card__card">
+          <a href="https://play.google.com/store/apps/details?id=com.pruebatest.pn&hl=es_HN">
+            <picture>
+              <!-- Imagen para pantallas iguales o menores a 460px -->
+              <source media="(max-width: 460px)" srcset="../src/assets/images/pn-promo-s.png">
+              <!-- Imagen para pantallas iguales o menores a 700px --> 
+              <source media="(max-width: 700px)" srcset="../src/assets/images/pn-promo-m.png">
+              <!-- Imagen por defecto -->
+              <img class="card__imagen-fondo" src="../src/assets/images/pn-promo.png" alt="Banner promocional de la app Polidía Nacional Test">
+            </picture>
+          </a>
+        </div>
+        <div class="card card__card">
+          <a href="https://play.google.com/store/apps/details?id=com.pruebatest.per&hl=es_HN">
+            <picture>
+              <!-- Imagen para pantallas iguales o menores a 460px -->
+              <source media="(max-width: 460px)" srcset="../src/assets/images/pertest-promo-s.png">
+              <!-- Imagen para pantallas iguales o menores a 700px --> 
+              <source media="(max-width: 700px)" srcset="../src/assets/images/pertest-promo-m.png">
+              <!-- Imagen por defecto -->
+              <img class="card__imagen-fondo" src="../src/assets/images/pertest-promo.png" alt="Banner promocional de la app PER Tests - Patrón de Recreo">
+            </picture>
+          </a>
+        </div>
+        <div class="card card__card">
+          <a href="https://play.google.com/store/apps/details?id=com.pruebatest.ley052015&hl=es_HN">
+            <picture>
+              <!-- Imagen para pantallas iguales o menores a 460px -->
+              <source media="(max-width: 460px)" srcset="../src/assets/images/52015-promo-s.png">
+              <!-- Imagen para pantallas iguales o menores a 700px -->
+              <source media="(max-width: 700px)" srcset="../src/assets/images/52015-promo-m.png">
+              <!-- Imagen por defecto -->
+              <img class="card__imagen-fondo" src="../src/assets/images/52015-promo.png" alt="Banner promocional de la app Tests TREBEP Ley 5/2015">
+            </picture>
+          </a>
+        </div>
+        <div class="card card__card"> 
+          <a href="https://play.google.com/store/apps/details?id=com.pruebatest.pnb&hl=es_HN">
+            <picture>
+              <!-- Imagen para pantallas iguales o menores a 460px -->
+              <source media="(max-width: 460px)" srcset="../src/assets/images/pnb-promo-s.png"> 
+              <!-- Imagen para pantallas iguales o menores a 700px --> 
+              <source media="(max-width: 700px)" srcset="../src/assets/images/pnb-promo-m.png">
+              <!-- Imagen por defecto -->
+              <img class="card__imagen-fondo" src="../src/assets/images/pnb-promo.png" alt="Banner promocional de la app PNB Tests">
+            </picture>
+          </a>
+        </div>
+        <div class="card card__card">
+          <a href="https://play.google.com/store/apps/details?id=com.pruebatest.ley402015&hl=es_HN">
+            <picture>
+              <!-- Imagen para pantallas iguales o menores a 460px -->
+              <source media="(max-width: 460px)" srcset="../src/assets/images/402015-promo-s.png">
+              <!-- Imagen para pantallas iguales o menores a 700px -->
+              <source media="(max-width: 700px)" srcset="../src/assets/images/402015-promo-m.png">
+              <!-- Imagen por defecto -->
+              <img class="card__imagen-fondo" src="../src/assets/images/402015-promo.png" alt="Banner promocional de la app Tests Ley 40/2015 (LRJSP)">
+            </picture>
+          </a>
+        </div>
+        <div class="card card__card">
+          <a href="https://play.google.com/store/apps/details?id=com.pruebatest.ley022015&hl=es_HN">
+            <picture>
+              <!-- Imagen para pantallas iguales o menores a 460px -->
+              <source media="(max-width: 460px)" srcset="../src/assets/images/22015-promo-s.png">
+              <!-- Imagen para pantallas iguales o menores a 700px --> 
+              <source media="(max-width: 700px)" srcset="../src/assets/images/22015-promo-m.png">
+              <!-- Imagen por defecto -->
+              <img class="card__imagen-fondo" src="../src/assets/images/22015-promo.png" alt="Banner promocional de la app Tests Estatuto del Trabajador">
+            </picture>
+          </a>
+        </div>
+        
+        <div class="card card__card">
+          <a href="https://play.google.com/store/apps/details?id=com.pruebatest.ley032007&hl=es_HN">
+            <picture>
+              <!-- Imagen para pantallas iguales o menores a 460px -->
+              <source media="(max-width: 460px)" srcset="../src/assets/images/32007-promo-s.png">
+              <!-- Imagen para pantallas iguales o menores a 700px --> 
+              <source media="(max-width: 700px)" srcset="../src/assets/images/32007-promo-m.png">
+              <!-- Imagen por defecto -->
+              <img class="card__imagen-fondo" src="../src/assets/images/32007-promo.png" alt="Banner promocional de la app Tests Ley 3/2007 (Igualdad)">
+            </picture>
+          </a>
+        </div>
+        
+        <div class="card card__card">
+          <a href="https://play.google.com/store/apps/details?id=com.pruebatest.ley042000&hl=es_HN">
+            <picture>
+              <!-- Imagen para pantallas iguales o menores a 460px -->
+              <source media="(max-width: 460px)" srcset="../src/assets/images/42000-promo-s.png">
+              <!-- Imagen para pantallas iguales o menores a 700px -->
+              <source media="(max-width: 700px)" srcset="../src/assets/images/42000-promo-m.png">
+              <!-- Imagen por defecto -->
+              <img class="card__imagen-fondo" src="../src/assets/images/42000-promo.png" alt="Banner promocional de la app Tests Ley Extranjería (4/2000)">
+            </picture>
+          </a>
+        </div>
+        
+        <div class="card card__card">
+          <a href="https://play.google.com/store/apps/details?id=com.pruebatest.ley392015&hl=es_HN">
+            <picture>
+              <!-- Imagen para pantallas iguales o menores a 460px -->
+              <source media="(max-width: 460px)" srcset="../src/assets/images/392015-promo-s.png"> 
+              <!-- Imagen para pantallas iguales o menores a 700px --> 
+              <source media="(max-width: 700px)" srcset="../src/assets/images/392015-promo-m.png">
+              <!-- Imagen por defecto -->
+              <img class="card__imagen-fondo" src="../src/assets/images/392015-promo.png" alt="Banner promocional de la app Tests Ley 39/2015">
+            </picture>
+          </a>
+        </div>
+        <div class="card card__card">
+          <a href="https://play.google.com/store/apps/details?id=com.pruebatest.ley092017&hl=es_HN">
+            <picture>
+              <!-- Imagen para pantallas iguales o menores a 460px -->
+              <source media="(max-width: 460px)" srcset="../src/assets/images/92017-promo-s.png"> 
+              <!-- Imagen para pantallas iguales o menores a 700px --> 
+              <source media="(max-width: 700px)" srcset="../src/assets/images/92017-promo-m.png">
+              <!-- Imagen por defecto -->
+              <img class="card__imagen-fondo" src="../src/assets/images/92017-promo.png" alt="Banner promocional de la app Tests Ley 9/2017 (LCSP)">
+            </picture>
+          </a>
+        </div>
+        <div class="card card__card">
+          <a href="https://play.google.com/store/apps/details?id=com.pruebatest.gasolinapp&hl=es_HN">
+            <picture>
+              <!-- Imagen para pantallas iguales o menores a 460px -->
+              <source media="(max-width: 460px)" srcset="../src/assets/images/gasolin-promo-s.png"> 
+              <!-- Imagen para pantallas iguales o menores a 700px --> 
+              <source media="(max-width: 700px)" srcset="../src/assets/images/gasolin-promo-m.png">
+              <!-- Imagen por defecto -->
+              <img class="card__imagen-fondo" src="../src/assets/images/gasolin-promo.png" alt="Banner promocional de la app Precios de gasolineras España">
+            </picture>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer class="pie pagina__pie">
+      <p class="pie__creditos"><span property="dct:title">PruebaTest World ©</span> by <a class="pie__enlace" href="https://play.google.com/store/apps/dev?id=9018008801477259700&hl=es_HN" rel="cc:attributionURL dct:creator" property="cc:attributionName">PruebaTest World S.A.</a> is marked with <a class="pie__enlace" href="http://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC0 1.0<img class="pie__imagen" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="Logotipo de Creative Commons 1.0"><img class="pie__imagen" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1" alt="Logotipo de No Copyright"></a></p>
+      <p class="pie__creditos">Empresa de desarrollo de aplicaciones Android basadas en el aprendizaje didáctico. <a href="app-ads.txt" style="display:none;">app-ads.txt</a></p>
+      <p class="pie__creditos">Video de las Vegas obtenido de <a class="pie__enlace" href="http://www.videezy.com">Free Stock Videos by Videezy</a>.</p>
+    </footer>
+    <script src="./assets/scripts/main.js" type="module"></script><!-- do not remove this line! -->
+  </body>
+</html>

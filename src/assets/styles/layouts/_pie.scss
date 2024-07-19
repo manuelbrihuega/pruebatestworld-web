@@ -1,0 +1,26 @@
+.pie {
+  padding: 2rem;
+  background-color: $negro;
+  @include estilos-texto(.75, $blanco, inherit, inherit);
+}
+
+.pie__creditos {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  @include estilos-texto(.75, inherit, 1.5, inherit);
+  text-align: right;
+}
+
+.pie__imagen {
+  max-width: 20px;
+}
+
+.pie__enlace {
+  @include estilos-texto(.75, $blanco, inherit, inherit);
+  transition: all .4s linear;
+
+  &:hover {
+    @include estilos-texto(.75, color-degradado($blanco, $gristexto, 50%), inherit, inherit);
+  }
+}

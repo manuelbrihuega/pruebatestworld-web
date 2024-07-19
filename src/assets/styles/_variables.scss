@@ -1,0 +1,21 @@
+@use "sass:color";
+
+// Fuentes
+$font-family-sans-serif: -apple-system, blinkmacsystemfont, "Segoe UI", roboto,
+  "Helvetica Neue", arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+// Colores
+$blanco: #fff;
+$negro: #000;
+$gristexto: #354149;
+$enlacesmall: #115ac1;
+
+// Umbrales Responsive
+$ultra-grande-max-width: 1550px;
+$grande-max-width: 1250px;
+$medio-max-width: 1100px;
+$tablet-max-width: 950px;
+$movil-max-width: 700px;
+$minimo-max-width: 460px;

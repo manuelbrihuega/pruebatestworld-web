@@ -1,0 +1,20 @@
+// Función parcial para sacar degradado
+@function color-degradado($color-1, $color-2, $porcentaje) {
+  @return mix($color-1, $color-2, $porcentaje);
+}
+
+// Mixin para los estilos de texto
+@mixin estilos-texto($tamano, $color, $interlineado, $grosor) {
+  font-size: $tamano * 1rem;
+  font-weight: $grosor;
+  line-height: $interlineado;
+  color: $color;
+}
+
+// Mixin para los bordes redondeados
+@mixin borde-redondeado($radio) {
+  border-top-left-radius: $radio * 1rem;
+  border-top-right-radius: $radio * 1rem;
+  border-bottom-right-radius: $radio * 1rem;
+  border-bottom-left-radius: $radio * 1rem;
+}
